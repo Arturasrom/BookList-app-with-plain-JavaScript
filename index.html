@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <title>Knygų biblioteka</title>
+    
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-primary"></i> Mano <span class="text-primary"> knygų </span> biblioteka </h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="title">Pavadinimas</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Autorius</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN numeris</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <input type="submit" value="PRIDĖTI KNYGĄ" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Pavadinimas</th>
+                    <th>Autorius</th>
+                    <th>ISBN numeris</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src = "app.js"></script>
+</body>
+
+</html>
